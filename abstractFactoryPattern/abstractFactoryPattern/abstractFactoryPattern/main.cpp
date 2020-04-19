@@ -1,3 +1,5 @@
+/***************************/
+
 #include "abstractFactory.h"
 #include "abstractProduct.h"
 #include "main.h"
