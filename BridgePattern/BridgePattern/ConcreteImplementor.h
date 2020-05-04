@@ -15,10 +15,10 @@ class Light: public IElectricalEquipment
 {
 public:
 	virtual void PowerOn() override {
-		std::cout << "Light poweron" << std::endl;
+		std::cout << "Light power on" << std::endl;
 	}
 	virtual void PowerOff() override{
-		std::cout << "Light poweroff" << std::endl;
+		std::cout << "Light power off" << std::endl;
 	}
 };
 
@@ -26,10 +26,21 @@ class Air : public IElectricalEquipment
 {
 public:
 	virtual void PowerOn() override {
-		std::cout << "Air poweron" << std::endl;
+		std::cout << "Air power on" << std::endl;
 	}
 	virtual void PowerOff() override{
-		std::cout << "Air poweroff" << std::endl;
+		std::cout << "Air power off" << std::endl;
+	}
+};
+
+class Fan: public IElectricalEquipment
+{
+public:
+	virtual void PowerOn() override {
+		std::cout << "Fan power on" << std::endl;
+	}
+	virtual void PowerOff() override{
+		std::cout << "Fan power off" << std::endl;
 	}
 };
 

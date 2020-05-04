@@ -8,7 +8,7 @@ Content:abstractAction.h
 #ifndef DESIGNPATTERN_ABSTRACTION_H
 #define DESIGNPATTERN_ABSTRACTION_H
 
-//  类之间的关系为组合
+// 类之间的关系为组合
 #include "Implementor.h"
 class ISwitch {
 public:

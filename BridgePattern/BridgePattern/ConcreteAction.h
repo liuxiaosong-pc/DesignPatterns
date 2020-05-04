@@ -40,6 +40,22 @@ public:
 	}
 };
 
+class ThreePositionSwitch : public ISwitch {
+public:
+	ThreePositionSwitch(IElectricalEquipment *ee) : ISwitch(ee) {}
+
+	virtual void On() override {
+		std::cout << "Switch on the equipment with a Three-position switch." << std::endl;
+		m_pEe->PowerOn();
+	}
+
+	virtual void Off() override {
+		std::cout << "Switch off the equipment with a Three-position switch." << std::endl;
+		m_pEe->PowerOff();
+	}
+};
+
+
 
 #endif //DESIGNPATTERN_CONCRETEACTION_H
 
