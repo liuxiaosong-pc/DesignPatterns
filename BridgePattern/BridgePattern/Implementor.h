@@ -12,8 +12,8 @@ class IElectricalEquipment
 {
 public:
 	virtual ~IElectricalEquipment(){}
-	virtual void PowerOn() = 0;     // ´ò¿ª
-	virtual void PowerOff() = 0;    // ¹Ø±Õ
+	virtual void PowerOn() = 0;     // open
+	virtual void PowerOff() = 0;    // close
 };
 
 #endif //DESIGNPATTERN_IMPLEMENTOR_H
